@@ -1,0 +1,34 @@
+h3, h2{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: rgb(241, 245, 168);
+}
+.heading{
+    text-align: center;
+    font-size: larger;
+}
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+}
+.properties{
+    flex: 1;
+    max-width: 200px;
+    background-color: rgb(178, 179, 119);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .heading, p, h3{
+        font-size: smaller;
+    }
+}
